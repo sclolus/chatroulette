@@ -2,7 +2,7 @@ const find_start_button = () => {
     return Array.from(document.querySelectorAll("button").entries()).filter(([index, element]) => {
 	console.log(`${element}`)
 
-	const found = element.className.search("Button_primary") >= 0
+	const found = element.className.search("button") >= 0
 	
 	return found
     })[0][1]
@@ -11,7 +11,7 @@ const find_start_button = () => {
 
 const find_accept_button = () => {
     return Array.from(document.querySelectorAll("button").entries()).filter(([index, element]) => {
-	const found = element.className.search("select") >= 0
+	const found = element.className.search("Button_primary") >= 0
 	
 	return found
    })[0][1]
